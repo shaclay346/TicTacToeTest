@@ -56,9 +56,6 @@ div{
 }
 
 
-
-
-
 #colorDisplay {
 	font-size: 200%;
 }
@@ -66,18 +63,23 @@ div{
 #message {
 	display: inline-block;
 	width: 20%;
+	text-align: center;
+	font-size: 40px;
+	color: black;
+	margin-right: 60px;
 }
 
 #stripe {
 	background: white;
-	height: 30px;
+	height: 50px;
 	text-align: center;
 	color: black;
 }
 
 .selected {
 	color: white;
-	background: steelblue;
+	background: black;
+	float: left;
 }
 
 button {
