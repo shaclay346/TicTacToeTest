@@ -143,7 +143,7 @@ function displayWinner(winner) {
     //else have some winning animation happen 
     else {
         const message = document.getElementById('message');
-        message.innerText = "Winner!";
+        message.innerText = `${winner} Wins!`;
     }
 }
 
@@ -210,11 +210,22 @@ function newGame() {
 
 
 //function init() {
+const AiButton = document.getElementById('AI');
+
+AiButton.addEventListener('click', function (e) {
+    newGame();
+    board = getBoard();
+    //if the AI is going first I have the first move hard coded
+    //the runtime is way too slow to calculate all possible moves
+    //in every possible game, just for the AI to play in the same spot every time
+    //so I decided it best to just instantly have them play in the top left
+    board[0][0].innerHTML = '<p>O</p>';
+
+});
+
+
 
 const s = document.getElementById('container');
-
-
-
 
 //add a listener to all squares 
 s.addEventListener('click', function (e) {
