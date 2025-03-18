@@ -1,0 +1,120 @@
+body {
+	background-color: grey;
+	margin: 0;
+	font-family: "Montserrat", "Avenir";
+}
+
+
+#container {
+	margin: 50px auto;
+	max-width: 600px;
+	margin-top: 25px;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 12px;
+	width: fit-content;
+}
+
+.square {
+	width: 150px;
+	height: 150px;
+    background: #232323;
+    margin-left: 10px;
+	margin-right:10px;
+	cursor: pointer;
+	border-radius: 1rem;
+	display: grid;
+}
+
+p{
+	color: aliceblue;
+    font-size: 800%;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 10%;
+}
+
+
+#winner{
+	display: none;
+}
+
+h1 {
+	text-align: center;
+	justify-self: center;
+	line-height: 1.0;
+	font-weight: normal;
+	color: white;
+	background: steelblue;
+	margin: 0;
+	/* margin-bottom: 1%; */
+	text-transform: uppercase;
+	/* padding: 10px 0; */
+}
+
+
+#colorDisplay {
+	font-size: 400%;
+	background: transparent;
+	align-self: center;
+}
+
+.header {
+	height: 125px;
+	width: 100%;
+	display: grid;
+}
+
+.displayText {
+	display: block;
+	width: 20%;
+	font-weight: bold;
+	font-size: 50px;
+	color: black;
+	margin: 0;
+	justify-self: center;
+
+}
+
+#stripe {
+	justify-content: center;
+	background: rgb(179, 171, 171);
+	height: 50px;
+	text-align: center;
+	color: black;
+	margin-bottom: 25px;
+}
+
+#stripe:hover{
+	border-radius: 0.5rem;
+	border-color: rgb(255, 255, 255);
+	border-style: solid;
+}
+
+
+.selected {
+	background-color: #232323;
+	color: white;
+	border: 2px solid black;
+	cursor: pointer;
+}
+
+#reset{
+	margin-right: 50px;
+}
+
+button {
+	/* border: none; */
+	/* background: none; */
+	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+	/* color: steelblue; */
+	letter-spacing: 1px;
+	font-size: inherit;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	outline: none;
+}
+
